@@ -1,15 +1,24 @@
-name: 'Hello World'
-description: 'Greet someone and record the time'
+name: 'Share Jobs Data'
+description: 'Share data between GitHub Actions jobs'
 
 inputs:
-  who-to-greet:  # id of input
-    description: 'Who to greet'
+  share-id:
     required: true
-    default: 'World'
+  mode:
+    required: true
+  key:
+    required: true
+  value:
+    required: false
+
 outputs:
-  time: # id of output
-    description: 'The time we greeted you'
+  data:
+    description: 'shared data'
 
 runs:
   using: 'node12'
   main: 'dist/index.js'
+
+branding:
+  icon: database
+  color: yellow

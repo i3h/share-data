@@ -18,7 +18,10 @@
   },
   "homepage": "https://github.com/noobly314/share-variable#readme",
   "dependencies": {
+    "@actions/artifact": "^0.3.0",
     "@actions/core": "^1.2.3",
-    "@actions/github": "^2.1.1"
+    "@actions/github": "^2.1.1",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.5"
   }
 }
